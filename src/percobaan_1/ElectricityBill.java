@@ -1,6 +1,6 @@
 package percobaan_1;
 
-public class ElectricityBill implements Payable {
+public class ElectricityBill extends Employee implements Payable {
 
     private int kwh;
     private String category;

@@ -6,7 +6,7 @@ public class InternshipEmployee extends Employee {
 
     public InternshipEmployee(String name, int lengh) {
         this.length = lengh;
-        this.name = name;
+        super.name = name;
     }
 
     public int getLength() {
