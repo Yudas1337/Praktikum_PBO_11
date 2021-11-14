@@ -14,7 +14,6 @@ public class Owner {
             System.out.println("" + eb.getBillInfo());
         } else if (p instanceof PermanentEmployee) {
             PermanentEmployee pe = (PermanentEmployee) p;
-            pe.getEmployeeInfo();
             System.out.println("" + pe.getEmployeeInfo());
         }
     }

@@ -16,17 +16,22 @@ public class Barrier implements Destroyable {
     }
 
     public void destroy() {
+        if (this.strength == 0) {
+            this.destroyed();
+        } else {
 
+        }
     }
 
     public String getBarrierInfo() {
-        return "1";
+        String info = "";
+        info += "Barrier Strength = " + this.getStrength();
+        return info;
     }
 
     @Override
     public void destroyed() {
-        // TODO Auto-generated method stub
-
+        System.out.println("Barrier is destroyed");
     }
 
 }
